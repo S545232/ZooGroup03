@@ -6,12 +6,12 @@ package edu.nwmissouri.zoo03group;
 
 /**
  *
- * @author Satya Sai Vinuthna Tummala
+ * @author S544720
  */
 public enum VisitorCategory {
     FIRST_TIME_VISITOR,
-    STUDENT_VISITOR,
-    SENIOR_CITIZEN_VISITOR,
-    CHILD_VISITOR,
-    ADULT_VISITOR
+STUDENT_VISITOR,
+SENIOR_CITIZEN_VISITOR,
+CHILD_VISITOR,
+ADULT_VISITOR
 }
