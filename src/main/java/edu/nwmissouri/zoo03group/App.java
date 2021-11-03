@@ -16,6 +16,9 @@ public class App {
         initSeniorCitizenVisitor();
         initAdultVisitor();
         initEmployeeCareTaker();
+        initEmployeeRescueOperator();
+        initEmployeeGuide();
+        initZooMaintainer();
     }
 
     private static void initStudentVisitor() {
@@ -55,5 +58,32 @@ public class App {
         employeeCareTaker.employeeCategory();
         employeeCareTaker.employeeID();
 
+    }
+
+    private static void initEmployeeRescueOperator() {
+
+        EmployeeRescueOperators employeeRescueOperators = new EmployeeRescueOperators(673739, "Employee Rescue Operator", "John Greesham", "6AM-1PM", "name", "email", 188292829);
+        employeeRescueOperators.employeeCategory();
+        employeeRescueOperators.employeeID();
+        employeeRescueOperators.employeeName();
+        employeeRescueOperators.employeeShiftTimings();
+    }
+
+    private static void initEmployeeGuide() {
+
+        EmployeeGuide employeeGuide = new EmployeeGuide(682939, "Employee Guide", "Tony Stark", "10AM-6PM", "name", "email", 1982882882);
+        employeeGuide.employeeCategory();
+        employeeGuide.employeeID();
+        employeeGuide.employeeName();
+        employeeGuide.employeeShiftTimings();
+    }
+
+    private static void initZooMaintainer() {
+
+        ZooMaintainer zooMaintainer = new ZooMaintainer(692939, "Zoo Maintainer", "Jack Sparrow", "9AM-7PM", "name", "email", 1788298277);
+        zooMaintainer.employeeCategory();
+        zooMaintainer.employeeID();
+        zooMaintainer.employeeName();
+        zooMaintainer.employeeShiftTimings();
     }
 }
