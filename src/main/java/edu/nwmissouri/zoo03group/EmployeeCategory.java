@@ -10,8 +10,7 @@ package edu.nwmissouri.zoo03group;
  */
 public enum EmployeeCategory {
     EMPLOYEE_CARE_TAKER,
-    EMPLOYEE_STAFF,
     EMPLOYEE_RESCUE_OPEARTORS,
     EMPLOYEE_GUIDE,
-    EMPLOYEE_VETERANS
+    ZOO_MAINTAINER
 }
