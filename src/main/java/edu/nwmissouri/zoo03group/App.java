@@ -14,7 +14,8 @@ public class App {
         initStudentVisitor();
         initChildVisitor();
         initSeniorCitizenVisitor();
-
+        initAdultVisitor();
+        initEmployeeCareTaker();
     }
 
     private static void initStudentVisitor() {
@@ -38,4 +39,21 @@ public class App {
         seniorCitizenVisitor.zooWheelChair();
     }
 
+    private static void initAdultVisitor() {
+        AdultVisitor adultVisitor = new AdultVisitor("AdultVisitor", "8.5$", "name", "email.com", 1234567890);
+        adultVisitor.ticketPrice();
+        adultVisitor.visitorCategory();
+    }
+
+    private static void initEmployeeCareTaker() {
+        EmployeeCareTaker employeeCareTaker = new EmployeeCareTaker(865432, "EmployeeCareTaker", "Employee name", "9am-5pm", "name", "email", 1234567890);
+        employeeCareTaker.getName();
+        employeeCareTaker.getEmail();
+        employeeCareTaker.getPhoneNumber();
+        employeeCareTaker.employeeShiftTimings();
+        employeeCareTaker.employeeName();
+        employeeCareTaker.employeeCategory();
+        employeeCareTaker.employeeID();
+
+    }
 }
