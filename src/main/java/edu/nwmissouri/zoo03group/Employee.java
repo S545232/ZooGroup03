@@ -8,7 +8,7 @@ package edu.nwmissouri.zoo03group;
  *
  * @author Hari Hara Mummadi
  */
-public class Employee extends Person {
+public class Employee extends AbstractPerson {
     
     private int employeeID;
     private String employeeCategory;

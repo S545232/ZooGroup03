@@ -8,7 +8,7 @@ package edu.nwmissouri.zoo03group;
  *
  * @author Anil Kumar Kolla(S545232@nwmissouri.edu)
  */
-public class Visitor extends Person {
+public class Visitor extends AbstractPerson {
 
     private String visitorCategory;
     private String ticketPrice;

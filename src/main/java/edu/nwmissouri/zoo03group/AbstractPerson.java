@@ -8,13 +8,13 @@ package edu.nwmissouri.zoo03group;
  *
  * @author Anil Kumar Kolla(S545232@nwmissouri.edu)
  */
-public abstract class Person {
+public abstract class AbstractPerson {
 
     private String name;
     private String email;
     private int phoneNumber;
 
-    public Person(String name, String email, int phoneNumber) {
+    public AbstractPerson(String name, String email, int phoneNumber) {
         this.name = name;
         this.email = email;
         this.phoneNumber = phoneNumber;
