@@ -8,6 +8,10 @@ package edu.nwmissouri.zoo03group;
  *
  * @author Anil Kumar Kolla(S545232@nwmissouri.edu)
  */
-public class VisitorCategory {
-    
+public enum VisitorCategory {
+FIRST_TIME_VISITOR,
+STUDENT_VISITOR,
+SENIOR_CITIZEN_VISITOR,
+CHILD_VISITOR,
+ADULT_VISITOR
 }
