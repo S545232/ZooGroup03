@@ -3,14 +3,7 @@ package edu.nwmissouri.zoo03group;
 public class App {
 
     public static void main(String[] args) {
-
-        FirstTimeVisitor firstTimeVisitor = new FirstTimeVisitor("FirstTimeVisitor", "10$", "name", "email.com", 1234567890);
-        firstTimeVisitor.getName();
-        firstTimeVisitor.getEmail();
-        firstTimeVisitor.getPhoneNumber();
-        firstTimeVisitor.ticketPrice();
-        firstTimeVisitor.visitorCategory();
-
+        initFirstTimeVisitor();
         initStudentVisitor();
         initChildVisitor();
         initSeniorCitizenVisitor();
@@ -19,6 +12,15 @@ public class App {
         initEmployeeRescueOperator();
         initEmployeeGuide();
         initZooMaintainer();
+    }
+    
+    private static void initFirstTimeVisitor() {
+        FirstTimeVisitor firstTimeVisitor = new FirstTimeVisitor("FirstTimeVisitor", "10$", "name", "email.com", 1234567890);
+        firstTimeVisitor.getName();
+        firstTimeVisitor.getEmail();
+        firstTimeVisitor.getPhoneNumber();
+        firstTimeVisitor.ticketPrice();
+        firstTimeVisitor.visitorCategory();
     }
 
     private static void initStudentVisitor() {
