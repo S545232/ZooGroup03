@@ -15,7 +15,7 @@ public class ChildVisitor extends Visitor{
 
     @Override
     public void ticketPrice() {
-        System.out.println("Ticket price for the child visitor is : 4$");
+        System.out.println("Zoo Entry Ticket price for child visitor is : 4$");
     }
 
     @Override
@@ -24,12 +24,12 @@ public class ChildVisitor extends Visitor{
     }
     
     public void age(){
-        System.out.println("My age is 4 Years");
+        System.out.println("I am 4 years old");
     }
         
     
     public void zooStroller(){
-        System.out.println("I need  a Stroller");
+        System.out.println("I need a Stroller");
     }  
     
 }
