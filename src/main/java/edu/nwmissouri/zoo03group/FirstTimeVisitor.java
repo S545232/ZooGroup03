@@ -16,12 +16,12 @@ public class FirstTimeVisitor extends Visitor{
 
     @Override
     public void ticketPrice() {
-        System.out.println("Ticket price for the first time visitor is : 10$");
+        System.out.println("Zoo Entry Ticket price for the first time visitor is : 10$");
     }
 
     @Override
     public void visitorCategory() {
-        System.out.println("I am a first time visitor");
+        System.out.println("I am a First Time Visitor");
     }
 
 }

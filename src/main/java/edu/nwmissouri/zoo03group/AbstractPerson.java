@@ -25,6 +25,9 @@ public abstract class AbstractPerson {
     public abstract void getEmail();
 
     public abstract void getPhoneNumber();
-    
-    
+
+    @Override
+    public String toString() {
+        return "Person{" + "Name is : " + name + ", Email is : " + email + " and PhoneNumber is : " + phoneNumber + '}';
+    }   
 }
