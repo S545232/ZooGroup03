@@ -15,12 +15,14 @@ public class AdultVisitor extends Visitor{
     }
     @Override
     public void ticketPrice() {
-        System.out.println("Ticket price for the Adult time visitor is : 8.5$");
+        System.out.println("Zoo Entry Ticket price for the Adult Visitor is : 8.5$");
     }
 
     @Override
     public void visitorCategory() {
         System.out.println("I am an Adult Visitor");
     }
-    
+    public void visitorOccupation(){
+        System.out.println("Adult Visitor Occupation is : Sales Manager");
+    }
 }
