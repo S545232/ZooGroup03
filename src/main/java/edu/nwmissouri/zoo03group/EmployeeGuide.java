@@ -15,12 +15,12 @@ public class EmployeeGuide extends Employee {
     }
 
     public void getLanguagesKnown() {
-        System.out.println("I know English, Hindi and Telugu.");
+        System.out.println("I'm proficient in  English, Spanish and French languages.");
     }
 
     @Override
     public void employeeShiftTimings() {
-        System.out.println("Employee Shift Timings are : 10AM - 6PM");
+        System.out.println("My shift timings are : 10AM - 6PM");
     }
 
     @Override
@@ -30,12 +30,12 @@ public class EmployeeGuide extends Employee {
 
     @Override
     public void employeeCategory() {
-        System.out.println("I'm an Employee Guide in a Zoo");
+        System.out.println("I'm a Guide in the Zoo");
     }
 
     @Override
     public void employeeID() {
-        System.out.println("My Employee ID is: 682939");
+        System.out.println("My employee ID is: 682939");
     }
 
 }

@@ -20,7 +20,7 @@ public class EmployeeRescueOperators extends Employee {
 
     @Override
     public void employeeShiftTimings() {
-        System.out.println("Employee Shift Timings are : 6AM - 1PM");
+        System.out.println("My shift timings are : 6AM - 1PM");
     }
 
     @Override
@@ -30,12 +30,12 @@ public class EmployeeRescueOperators extends Employee {
 
     @Override
     public void employeeCategory() {
-        System.out.println("I'm an employee Rescue Operator in a Zoo");
+        System.out.println("I'm a Rescue Operator in the Zoo");
     }
 
     @Override
     public void employeeID() {
-        System.out.println("Employee ID is : 456789");
+        System.out.println("My employee ID is : 456789");
     }
 
 }

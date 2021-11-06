@@ -15,12 +15,12 @@ public class ZooMaintainer extends Employee {
     }
 
     public void getMaintenanceProvider() {
-        System.out.println("SARUS company provides maintenance facility to Zoo.");
+        System.out.println("SARUS company provides maintenance facility to the Zoo.");
     }
 
     @Override
     public void employeeShiftTimings() {
-        System.out.println("Employee Shift Timings are : 9AM - 7PM");
+        System.out.println("My shift timings are : 9AM - 7PM");
     }
 
     @Override
@@ -30,7 +30,7 @@ public class ZooMaintainer extends Employee {
 
     @Override
     public void employeeCategory() {
-        System.out.println("I'm an Zoo maintainer in a Zoo");
+        System.out.println("I'm a Zoo maintainer");
     }
 
     @Override
