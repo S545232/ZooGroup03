@@ -26,7 +26,7 @@ public class EmployeeCareTaker extends Employee {
 
     @Override
     public void employeeCategory() {
-        System.out.println("I am a Employee Care Taker in a Zoo");    }
+        System.out.println("I am an Care Taker in the Zoo");    }
 
     @Override
     public void employeeID() {
