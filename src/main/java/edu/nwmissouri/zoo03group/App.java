@@ -2,7 +2,7 @@ package edu.nwmissouri.zoo03group;
 
 public class App {
 
-    private static final String WELCOME_MESSAGE = "Welcome to the Pecky Blinders Zoo!! \n";
+    private static final String WELCOME_MESSAGE = "Welcome to the Peaky Blinders Zoo!! \n";
     private static final String VISIT_AGAIN_MESSAGE = "Thank you for visiting, Please visit again!! \n";
 
     public static void main(String[] args) {
