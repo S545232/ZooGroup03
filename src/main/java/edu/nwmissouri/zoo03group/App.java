@@ -1,10 +1,18 @@
 package edu.nwmissouri.zoo03group;
 
+/**
+ * App class to execute the whole application and which contains the main  function where execution begins
+ * @author S545232
+ */
 public class App {
 
     private static final String WELCOME_MESSAGE = "Welcome to the Peaky Blinders Zoo!! \n";
     private static final String VISIT_AGAIN_MESSAGE = "Thank you for visiting, Please visit again!! \n";
 
+    /**
+     * main function is calling all the visitor and employee sub classes
+     * @param args
+     */
     public static void main(String[] args) {
         System.out.println(WELCOME_MESSAGE);
 

@@ -5,13 +5,33 @@
 package edu.nwmissouri.zoo03group;
 
 /**
- *
- * @author Anil Kumar Kolla(S545232@nwmissouri.edu)
+ * An Enum class which describes all categories of the Visitor
+ * @author Satya Sai Vinuthna Tummala
  */
 public enum VisitorCategory {
-FIRST_TIME_VISITOR,
-STUDENT_VISITOR,
-SENIOR_CITIZEN_VISITOR,
-CHILD_VISITOR,
-ADULT_VISITOR
+
+    /** 
+     * Which is to represent first time visitor
+     */
+    FIRST_TIME_VISITOR,
+
+    /**
+     * Which is to represent student visitor
+     */
+    STUDENT_VISITOR,
+
+    /**
+     * Which is to represent senior citizen visitor
+     */
+    SENIOR_CITIZEN_VISITOR,
+
+    /**
+     * Which is to represent child visitor
+     */
+    CHILD_VISITOR,
+
+    /**
+     * Which is to represent adult visitor
+     */
+    ADULT_VISITOR
 }
