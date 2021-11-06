@@ -15,7 +15,7 @@ public class StudentVisitor extends Visitor {
 
     @Override
     public void ticketPrice() {
-        System.out.println("Ticket price for the Student visitor is : 6$");
+        System.out.println("Zoo Entry Ticket price for the student visitor is : 6$");
     }
 
     @Override
@@ -24,6 +24,6 @@ public class StudentVisitor extends Visitor {
     }
     
     public void school(){
-        System.out.println("School of California");
+        System.out.println("I am from School of California");
     }  
 }
