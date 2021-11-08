@@ -53,6 +53,8 @@
             <version>${junit}</version>
             <scope>test</scope>
         </dependency>
+       
+        
     </dependencies>
     
     <build>
@@ -101,6 +103,21 @@
                 </execution>
                 </executions>
             </plugin>
+            
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <reportOutputDirectory>${basedir}</reportOutputDirectory>
+                    <destDir>docs</destDir>
+                    <sourcepath>${basedir}/src/main/java/</sourcepath>
+                    <sourceFileExcludes>     
+                    </sourceFileExcludes>
+                </configuration>
+            </plugin> 
+            
         </plugins>
     </build>
 </project>
