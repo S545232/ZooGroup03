@@ -20,7 +20,7 @@ public class ChildVisitor extends Visitor{
      * @param age
      * @param zooStroller
      */
-    public ChildVisitor(String visitorCategory, String ticketPrice, String name, String email, int phoneNumber, int age, String zooStroller) {
+    public ChildVisitor(VisitorCategory visitorCategory, String ticketPrice, String name, String email, int phoneNumber, int age, String zooStroller) {
         super(visitorCategory, ticketPrice, name, email, phoneNumber);
     }
 

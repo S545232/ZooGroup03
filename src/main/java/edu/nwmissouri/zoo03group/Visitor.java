@@ -10,8 +10,10 @@ package edu.nwmissouri.zoo03group;
  */
 public class Visitor extends AbstractPerson {
 
-    private String visitorCategory;
+//    private String visitorCategory;
     private String ticketPrice;
+    
+    private VisitorCategory visitorCategory;
 
     /**
      * Constructor with parameters to represent the behavior of a visitor
@@ -21,7 +23,7 @@ public class Visitor extends AbstractPerson {
      * @param email
      * @param phoneNumber
      */
-    public Visitor(String visitorCategory, String ticketPrice, String name, String email, int phoneNumber) {
+    public Visitor(VisitorCategory visitorCategory, String ticketPrice, String name, String email, int phoneNumber) {
         super(name, email, phoneNumber);
         this.visitorCategory = visitorCategory;
         this.ticketPrice = ticketPrice;

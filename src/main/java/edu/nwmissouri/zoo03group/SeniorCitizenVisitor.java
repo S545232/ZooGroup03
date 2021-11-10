@@ -19,7 +19,7 @@ public class SeniorCitizenVisitor extends Visitor {
      * @param phoneNumber
      * @param zooWheelChair
      */
-    public SeniorCitizenVisitor(String SeniorCitizenVisitor, String ticketPrice, String name, String email, int phoneNumber, String zooWheelChair) {
+    public SeniorCitizenVisitor(VisitorCategory SeniorCitizenVisitor, String ticketPrice, String name, String email, int phoneNumber, String zooWheelChair) {
         super(SeniorCitizenVisitor, ticketPrice, name, email, phoneNumber);
     }
 

@@ -42,7 +42,7 @@ public class App {
     }
 
     private static void initFirstTimeVisitor() {
-        FirstTimeVisitor firstTimeVisitor = new FirstTimeVisitor("FirstTimeVisitor", "10$", "James Cameron", "james@live.com", 989578575);
+        FirstTimeVisitor firstTimeVisitor = new FirstTimeVisitor(VisitorCategory.FIRST_TIME_VISITOR, "10$", "James Cameron", "james@live.com", 989578575);
         System.out.println(firstTimeVisitor.toString());
         firstTimeVisitor.ticketPrice();
         firstTimeVisitor.visitorCategory();
@@ -50,7 +50,7 @@ public class App {
     }
 
     private static void initStudentVisitor() {
-        StudentVisitor studentVisitor = new StudentVisitor("StudentVisitor", "6$", "Christopher Nolan", "nolan@gmail.com", 660987542, "School of California");
+        StudentVisitor studentVisitor = new StudentVisitor(VisitorCategory.STUDENT_VISITOR, "6$", "Christopher Nolan", "nolan@gmail.com", 660987542, "School of California");
         System.out.println(studentVisitor.toString());
         studentVisitor.ticketPrice();
         studentVisitor.visitorCategory();
@@ -59,7 +59,7 @@ public class App {
     }
 
     private static void initChildVisitor() {
-        ChildVisitor childVisitor = new ChildVisitor("ChildVisitor", "5$", "jj rodson", "rodson@gmail.com", 440675377, 4, "I need a Stroller");
+        ChildVisitor childVisitor = new ChildVisitor(VisitorCategory.CHILD_VISITOR, "5$", "jj rodson", "rodson@gmail.com", 440675377, 4, "I need a Stroller");
         System.out.println(childVisitor.toString());
         childVisitor.ticketPrice();
         childVisitor.visitorCategory();
@@ -69,7 +69,7 @@ public class App {
     }
 
     private static void initSeniorCitizenVisitor() {
-        SeniorCitizenVisitor seniorCitizenVisitor = new SeniorCitizenVisitor("SeniorCitizenVisitor", "4$", "Cillian Murphy", "murphy@gmail.com", 62, "I need Wheel Chair");
+        SeniorCitizenVisitor seniorCitizenVisitor = new SeniorCitizenVisitor(VisitorCategory.SENIOR_CITIZEN_VISITOR, "4$", "Cillian Murphy", "murphy@gmail.com", 62, "I need Wheel Chair");
         System.out.println(seniorCitizenVisitor.toString());
         seniorCitizenVisitor.ticketPrice();
         seniorCitizenVisitor.visitorCategory();
@@ -79,7 +79,7 @@ public class App {
     }
 
     private static void initAdultVisitor() {
-        AdultVisitor adultVisitor = new AdultVisitor("AdultVisitor", "8.5$", "Ryan Rodney Reynolds", "ryan@gmail.com", 514778899);
+        AdultVisitor adultVisitor = new AdultVisitor(VisitorCategory.ADULT_VISITOR, "8.5$", "Ryan Rodney Reynolds", "ryan@gmail.com", 514778899);
         System.out.println(adultVisitor.toString());
         adultVisitor.ticketPrice();
         adultVisitor.visitorCategory();

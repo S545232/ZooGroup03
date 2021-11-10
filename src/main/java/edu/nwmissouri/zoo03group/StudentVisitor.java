@@ -19,7 +19,7 @@ public class StudentVisitor extends Visitor {
      * @param phoneNumber
      * @param school
      */
-    public StudentVisitor(String visitorCategory, String ticketPrice, String name, String email, int phoneNumber, String school) {
+    public StudentVisitor(VisitorCategory visitorCategory, String ticketPrice, String name, String email, int phoneNumber, String school) {
         super(visitorCategory, ticketPrice, name, email, phoneNumber);
     }
 

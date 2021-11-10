@@ -18,7 +18,7 @@ public class AdultVisitor extends Visitor{
      * @param email
      * @param phoneNumber
      */
-    public AdultVisitor(String visitorCategory, String ticketPrice, String name, String email, int phoneNumber) {
+    public AdultVisitor(VisitorCategory visitorCategory, String ticketPrice, String name, String email, int phoneNumber) {
         super(visitorCategory, ticketPrice, name, email, phoneNumber);
     }
 
