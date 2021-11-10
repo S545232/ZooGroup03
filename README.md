@@ -12,4 +12,5 @@ A console app to describe about the zoo visitors and employees.
 <a href="https://github.com/harimummadi"><li>Hari Hara Mummadi</li></a>
 <a href="https://github.com/Baskar0106"><li>Bhaskar Venkata Prudhvi Bobbala</li></a>
 <a href="https://github.com/saitej-veerabathini"><li>Saitej Veerabathini</li></a>
+<a href="https://github.com/vinuthnachowdary"><li>Satya Sai Vinuthna Tummala</li></a>
 
