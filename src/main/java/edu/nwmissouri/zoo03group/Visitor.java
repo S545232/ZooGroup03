@@ -5,18 +5,19 @@
 package edu.nwmissouri.zoo03group;
 
 /**
- * An abstract class which contains abstract and implemented functions to represent a zoo visitor
+ * An abstract class which contains abstract and implemented functions to
+ * represent a zoo visitor
+ *
  * @author Anil Kumar Kolla(S545232@nwmissouri.edu)
  */
 public class Visitor extends AbstractPerson {
 
-//    private String visitorCategory;
-    private String ticketPrice;
-    
     private VisitorCategory visitorCategory;
+    private String ticketPrice;
 
     /**
      * Constructor with parameters to represent the behavior of a visitor
+     *
      * @param visitorCategory
      * @param ticketPrice
      * @param name
