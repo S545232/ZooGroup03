@@ -20,7 +20,7 @@ public class EmployeeGuide extends Employee {
      * @param email
      * @param phoneNumber
      */
-    public EmployeeGuide(int employeeID, String employeeCategory, String employeeName, String employeeShiftTimings, String name, String email, int phoneNumber) {
+    public EmployeeGuide(int employeeID, EmployeeCategory employeeCategory, String employeeName, String employeeShiftTimings, String name, String email, int phoneNumber) {
         super(employeeID, employeeCategory, employeeName, employeeShiftTimings, name, email, phoneNumber);
     }
 

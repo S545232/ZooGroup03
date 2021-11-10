@@ -20,7 +20,7 @@ public class ZooMaintainer extends Employee {
      * @param email
      * @param phoneNumber
      */
-    public ZooMaintainer(int employeeID, String employeeCategory, String employeeName, String employeeShiftTimings, String name, String email, int phoneNumber) {
+    public ZooMaintainer(int employeeID, EmployeeCategory employeeCategory, String employeeName, String employeeShiftTimings, String name, String email, int phoneNumber) {
         super(employeeID, employeeCategory, employeeName, employeeShiftTimings, name, email, phoneNumber);
     }
 

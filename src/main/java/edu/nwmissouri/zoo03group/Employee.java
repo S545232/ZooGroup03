@@ -11,7 +11,7 @@ package edu.nwmissouri.zoo03group;
 public class Employee extends AbstractPerson {
     
     private int employeeID;
-    private String employeeCategory;
+    private EmployeeCategory employeeCategory;
     private String employeeName;
     private String employeeShiftTimings;
 
@@ -25,7 +25,7 @@ public class Employee extends AbstractPerson {
      * @param email
      * @param phoneNumber
      */
-    public Employee(int employeeID, String employeeCategory, String employeeName, String employeeShiftTimings, String name, String email, int phoneNumber) {
+    public Employee(int employeeID, EmployeeCategory employeeCategory, String employeeName, String employeeShiftTimings, String name, String email, int phoneNumber) {
         super(name, email, phoneNumber);
         this.employeeID = employeeID;
         this.employeeCategory = employeeCategory;

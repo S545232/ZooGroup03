@@ -97,7 +97,7 @@ public class App {
     }
 
     private static void initEmployeeCareTaker() {
-        EmployeeCareTaker employeeCareTaker = new EmployeeCareTaker(865432, "EmployeeCareTaker", "David", "9am-5pm", "name", "david@gmail.com", 834569972);
+        EmployeeCareTaker employeeCareTaker = new EmployeeCareTaker(865432, EmployeeCategory.EMPLOYEE_CARE_TAKER, "David", "9am-5pm", "David", "david@gmail.com", 834569972);
         System.out.println(employeeCareTaker.toString());
         employeeCareTaker.employeeShiftTimings();
         employeeCareTaker.employeeCategory();
@@ -107,7 +107,7 @@ public class App {
 
     private static void initEmployeeRescueOperator() {
 
-        EmployeeRescueOperators employeeRescueOperators = new EmployeeRescueOperators(673739, "Employee Rescue Operator", "John Greesham", "6AM-1PM", "John Greesham", "john@gmail.com", 788292829);
+        EmployeeRescueOperators employeeRescueOperators = new EmployeeRescueOperators(673739, EmployeeCategory.EMPLOYEE_RESCUE_OPEARTORS, "John Greesham", "6AM-1PM", "John Greesham", "john@gmail.com", 788292829);
         System.out.println(employeeRescueOperators.toString());
         employeeRescueOperators.employeeCategory();
         employeeRescueOperators.employeeID();
@@ -117,7 +117,7 @@ public class App {
     }
 
     private static void initEmployeeGuide() {
-        EmployeeGuide employeeGuide = new EmployeeGuide(682939, "Employee Guide", "Tony Stark", "10AM-6PM", "Tony Stark", "tony@gmail.com", 498288282);
+        EmployeeGuide employeeGuide = new EmployeeGuide(682939, EmployeeCategory.EMPLOYEE_GUIDE, "Tony Stark", "10AM-6PM", "Tony Stark", "tony@gmail.com", 498288282);
         System.out.println(employeeGuide.toString());
         employeeGuide.employeeCategory();
         employeeGuide.employeeID();
@@ -127,7 +127,7 @@ public class App {
     }
 
     private static void initZooMaintainer() {
-        ZooMaintainer zooMaintainer = new ZooMaintainer(692939, "Zoo Maintainer", "Jack Sparrow", "9AM-7PM", "Jack Sparrow", "jack@gmail.com", 478828277);
+        ZooMaintainer zooMaintainer = new ZooMaintainer(692939, EmployeeCategory.ZOO_MAINTAINER, "Jack Sparrow", "9AM-7PM", "Jack Sparrow", "jack@gmail.com", 478828277);
         System.out.println(zooMaintainer.toString());
         zooMaintainer.employeeCategory();
         zooMaintainer.employeeID();
