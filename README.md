@@ -8,5 +8,5 @@ A console app to describe about the zoo visitors and employees.
 </ul>
 
 <h3>Peaky Blinders Group</h3>
-[Anil Kumar Kolla](https://github.com/S545232)
 <a href="https://github.com/S545232"><li>Anil Kumar Kolla</li></a>
+<a href="https://github.com/harimummadi"><li>Hari Hara Mummadi</li></a>
