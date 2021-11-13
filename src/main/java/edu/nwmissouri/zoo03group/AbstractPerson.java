@@ -47,6 +47,6 @@ public abstract class AbstractPerson {
      */
     @Override
     public String toString() {
-        return "Person{" + "Name is : " + name + ", Email is : " + email + " and PhoneNumber is : " + phoneNumber + '}';
+        return "Person{" + "Name is : " + name + ", Email is : " + email + " and PhoneNumber is : " + phoneNumber + "}";
     }   
 }
