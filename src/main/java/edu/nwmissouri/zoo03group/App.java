@@ -47,6 +47,8 @@ public class App {
                 + VisitorCategory.CHILD_VISITOR + "\n"
                 + VisitorCategory.ADULT_VISITOR + "\n"
         );
+
+        VisitorCategory.updateEnumValue();
     }
 
     private static void initFirstTimeVisitor() throws Exception {
