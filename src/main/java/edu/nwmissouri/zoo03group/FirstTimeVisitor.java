@@ -4,6 +4,10 @@
  */
 package edu.nwmissouri.zoo03group;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.PrintWriter;
+
 /**
  * This class which contains Override functions to print the First time visitor
  *
@@ -25,7 +29,6 @@ public class FirstTimeVisitor extends Visitor {
         super(visitorCategory, ticketPrice, name, email, phoneNumber);
     }
 
-
     /**
      * An Override function which prints the ticket price for a first time
      * visitor
@@ -43,4 +46,33 @@ public class FirstTimeVisitor extends Visitor {
         System.out.println("I am a First Time Visitor");
     }
 
+    public static void tryCatchFile() throws Exception {
+        // starting try block
+        try {
+            // Opening the file
+            File file = new File("file.txt");
+
+            // creating printWriter object
+            // by initiating fileWriter 
+            PrintWriter pw1 = new PrintWriter(new FileWriter(file), true);
+
+            // printing sample text
+            pw1.println("Hello world");
+            pw1.close();
+
+            // changing the file operation 
+            // to read-only 
+            file.setReadOnly();
+
+            // trying to write to new file
+            PrintWriter pw2 = new PrintWriter(new FileWriter("file.txt"), true);
+            pw2.println("Hello World");
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+
+        } finally {
+            System.out.println("We generally use the finally block to execute clean up code like closing connections, closing files, or freeing up threads, as it executes regardless of an exception.");
+        }
+    }
 }

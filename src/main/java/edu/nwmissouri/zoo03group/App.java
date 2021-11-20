@@ -1,8 +1,13 @@
 package edu.nwmissouri.zoo03group;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 /**
- * App class to execute the whole application and which contains the main  function where execution begins
- * @author S545232
+ * App class to execute the whole application and which contains the main
+ * function where execution begins
+ *
+ * @author Anil Kumar Kolla(S545232@nwmissouri.edu)
  */
 public class App {
 
@@ -11,9 +16,10 @@ public class App {
 
     /**
      * main function is calling all the visitor and employee sub classes
+     *
      * @param args
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println(WELCOME_MESSAGE);
 
         initVisitorCategories();
@@ -29,6 +35,8 @@ public class App {
         initZooMaintainer();
 
         System.out.println(VISIT_AGAIN_MESSAGE);
+
+        exceptionTest();
     }
 
     private static void initVisitorCategories() {
@@ -41,11 +49,12 @@ public class App {
         );
     }
 
-    private static void initFirstTimeVisitor() {
+    private static void initFirstTimeVisitor() throws Exception {
         FirstTimeVisitor firstTimeVisitor = new FirstTimeVisitor(VisitorCategory.FIRST_TIME_VISITOR, "10$", "James Cameron", "james@live.com", 989578575);
         System.out.println(firstTimeVisitor.toString());
         firstTimeVisitor.ticketPrice();
         firstTimeVisitor.visitorCategory();
+        firstTimeVisitor.tryCatchFile();
         System.out.println("\n***********************************************************************************\n");
     }
 
@@ -134,5 +143,26 @@ public class App {
         zooMaintainer.employeeShiftTimings();
         zooMaintainer.getMaintenanceProvider();
         System.out.println("\n***********************************************************************************\n");
+    }
+
+    /**
+     * This function showing the usage of try-catch-finally blocks.
+     *
+     * @param
+     */
+    public static void exceptionTest() {
+        System.out.println("Enter a number: ");
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            int input = sc.nextInt();
+
+        } catch (InputMismatchException e) {
+            e.printStackTrace();
+
+        } finally {
+            System.out.println("We generally use the finally block to execute clean up code like closing connections, closing files, or freeing up threads, as it executes regardless of an exception.");
+            sc.close();
+        }
     }
 }
