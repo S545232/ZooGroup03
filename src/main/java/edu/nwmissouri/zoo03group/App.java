@@ -74,6 +74,7 @@ public class App {
         childVisitor.visitorCategory();
         childVisitor.age();
         childVisitor.zooStroller();
+        childVisitor.arithmeticExceptionTest();
         System.out.println("\n***********************************************************************************\n");
     }
 

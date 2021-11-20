@@ -6,12 +6,14 @@ package edu.nwmissouri.zoo03group;
 
 /**
  * This is about Child visitor class
+ *
  * @author Bhaskar Venkata Prudhvi Bobbala
  */
-public class ChildVisitor extends Visitor{
+public class ChildVisitor extends Visitor {
 
     /**
      * constructor in the class
+     *
      * @param visitorCategory
      * @param ticketPrice
      * @param name
@@ -25,7 +27,7 @@ public class ChildVisitor extends Visitor{
     }
 
     /**
-     *Override method to print Ticket Price
+     * Override method to print Ticket Price
      */
     @Override
     public void ticketPrice() {
@@ -33,25 +35,39 @@ public class ChildVisitor extends Visitor{
     }
 
     /**
-     *Override method to print Visitor Category
+     * Override method to print Visitor Category
      */
     @Override
     public void visitorCategory() {
         System.out.println("I am a Child visitor");
     }
-    
+
     /**
-     *This method is used to print age of a Child Visitor
+     * This method is used to print age of a Child Visitor
      */
-    public void age(){
+    public void age() {
         System.out.println("I am 4 years old");
     }
-        
+
     /**
-     *This method is used to print Zoo Stroller for a Child Visitor
+     * This method is used to print Zoo Stroller for a Child Visitor
      */
-    public void zooStroller(){
+    public void zooStroller() {
         System.out.println("I need a Stroller");
-    }  
-    
+    }
+
+    public void arithmeticExceptionTest() {
+        try {
+            int num1 = 30, num2 = 0;
+            int output = num1 / num2;
+            System.out.println("Result: " + output);
+            
+        } catch (ArithmeticException e) {
+            System.out.println("You Shouldn't divide a number by zero");
+            e.printStackTrace();
+            
+        } finally {
+            System.out.println("This block execute after try-catch block even after exception came.");
+        }
+    }
 }
