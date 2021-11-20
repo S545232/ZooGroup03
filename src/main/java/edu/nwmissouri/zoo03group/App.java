@@ -94,6 +94,7 @@ public class App {
         adultVisitor.ticketPrice();
         adultVisitor.visitorCategory();
         adultVisitor.visitorOccupation();
+        adultVisitor.stringIndexOutOfBoundsException();
         System.out.println("\n***********************************************************************************\n");
     }
 
