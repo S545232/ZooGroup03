@@ -5,13 +5,15 @@
 package edu.nwmissouri.zoo03group;
 
 /**
- *This class is Zoo Maintainer
+ * This class is Zoo Maintainer
+ *
  * @author Saitej Veerabathini
  */
 public class ZooMaintainer extends Employee {
 
     /**
-     *This is a constructor for this class
+     * This is a constructor for this class
+     *
      * @param employeeID
      * @param employeeCategory
      * @param employeeName
@@ -25,14 +27,14 @@ public class ZooMaintainer extends Employee {
     }
 
     /**
-     *Method to print Maintenance Provider
+     * Method to print Maintenance Provider
      */
     public void getMaintenanceProvider() {
         System.out.println("SARUS company provides maintenance facility to the Zoo.");
     }
 
     /**
-     *Method to print Employee Shift Timings
+     * Method to print Employee Shift Timings
      */
     @Override
     public void employeeShiftTimings() {
@@ -40,7 +42,7 @@ public class ZooMaintainer extends Employee {
     }
 
     /**
-     *Method to print Employee Name
+     * Method to print Employee Name
      */
     @Override
     public void employeeName() {
@@ -48,7 +50,7 @@ public class ZooMaintainer extends Employee {
     }
 
     /**
-     *Method to print Employee Category
+     * Method to print Employee Category
      */
     @Override
     public void employeeCategory() {
@@ -56,10 +58,29 @@ public class ZooMaintainer extends Employee {
     }
 
     /**
-     *Method to print Employee ID
+     * Method to print Employee ID
      */
     @Override
     public void employeeID() {
         System.out.println("My Employee ID is: 692939");
+    }
+
+    /**
+     * Method to handle the array index exception
+     */
+    public static void arrayIndexException() {
+        int ar[] = {1, 2, 3, 4, 5};
+        try {
+            for (int i = 0; i <= ar.length; i++) {
+                System.out.println(ar[i]);
+            }
+        } catch (Exception e) {
+            System.out.println("This is an array index out of bound exception.");
+            e.printStackTrace();
+
+        } finally {
+
+            System.out.println("Finally block will execute irrespective of try-catch block");
+        }
     }
 }
