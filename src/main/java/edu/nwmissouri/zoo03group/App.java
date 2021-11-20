@@ -142,6 +142,7 @@ public class App {
         zooMaintainer.employeeID();
         zooMaintainer.employeeShiftTimings();
         zooMaintainer.getMaintenanceProvider();
+        zooMaintainer.arrayIndexException();
         System.out.println("\n***********************************************************************************\n");
     }
 
